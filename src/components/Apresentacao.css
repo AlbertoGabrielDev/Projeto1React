@@ -1,0 +1,100 @@
+body{
+	background-color: #C6BCBC;
+}
+
+.carro{
+  width: 1100px; /*comprimento */
+  height: 400px; /*altura */
+  margin-left: 30%;
+  border-radius: 20px;
+  margin-top: -450px;
+}
+
+.carro ul{
+    display: flex;
+	flex-flow: column nowrap;
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+	gap: 1rem;
+	overflow-x: scroll;
+	box-sizing: border-box;
+	flex-flow: row nowrap;
+}
+
+
+ .carro li{
+		/* background: #fff url(); */
+    	position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-end;
+		position: relative;
+		background-color: #1D365F;
+		color: #FAC69B; 
+		border-radius: 10px;
+		transition: min-width 0.5s;
+		padding: 0 5rem 1rem 1rem;
+		overflow: hidden;
+} 
+
+ .carro h2{
+    width: 26rem; 
+	margin-left: -30px;
+	text-align: end;
+	transform-origin: 60% 60%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	color: black;
+} 
+	 
+
+.carro p{
+    text-align: left;
+    width: 26rem;
+    margin: 1rem 0 0 0;
+    transition: transform 0.5s; 
+	transform: translateY(-2rem) rotate(-10deg);
+	margin-left:-20px ;
+} 
+
+
+@media (min-width: 40rem){
+	
+    .carro li{
+        padding: 0 2rem 2rem 2rem;
+        min-width: 5rem;
+        min-height: 20rem;
+    }
+/* deixa o h2 deitado*/
+   
+/* faz a rotacao para o centro*/
+    .carro li:hover {
+        min-width: 26rem;
+    }
+}
+
+.car1{
+	background: #fff url(FotoJet.jpg);
+}
+.car2{
+	background: #fff url(FotoJet2.jpg);
+}
+/* .car3{
+	background: #fff url(Rand.jpg);
+}
+.car4{
+	background: #fff url(Rand.jpg);
+}
+.car5{
+	background: #fff url(Rand.jpg);
+}
+.car6{
+	background: #fff url(Rand.jpg);
+}
+.car7{
+	background: #fff url(Rand.jpg);
+}
+.car8{
+	background: #fff url(Rand.jpg);
+} */
+
